@@ -1,2 +1,50 @@
 /**/
+body{
+  background-color: white;
+}
 
+a{
+  padding: 10px 10px 10px 50px;
+  text-decoration: none;
+  color: white;
+}
+
+#menu{
+  z-index: 10;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  bottom: -3%;
+}
+
+#menu{
+  text-align: center;
+  background: #a90017;
+  padding-top: 20px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+li{
+  display: inline;
+  text-align: center;
+}
+
+li a:link{
+  margin-left: -10%;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 15px;
+  color: white;
+}
+
+a{
+  color: white;
+  font-weight: bold;
+}
+
+li a:hover{
+  color: black;
+  background-color: white;
+  padding: 10px 50px 10px 50px;
+}
