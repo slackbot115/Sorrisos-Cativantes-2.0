@@ -1,17 +1,11 @@
-$(document).on("click","#somar", function(){
-  var DS=0;
-  var EF=0;
-  var ADM=0;
-  var MN=0;
-  var ED=0;
-  var TR=0;
-
-
-    if(true==($("#p").val())){ 
-      $("#quadroPergunta").val(result);
+$(document).on("click","#butao", function(){
+  var ask= parseInt(localStorage.getItem("ask"));
+  if($("#ask").prop("checked")==true){
+    ask++;
+    $("#work").val("on "+ask);
     }
-    
-    var valor2 = parseInt($("#valor2").val());
-    
-    $("#result").val("AEEE CARAMBA");
+  else{
+    $("#work").val("off "+ask);
+  }
+  localStorage.setItem("ask",ask); 
 });

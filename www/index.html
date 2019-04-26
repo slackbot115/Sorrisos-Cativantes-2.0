@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css.min">
 
-  
-
 </head>
 <body>
   <!-- <div class="formControl">
@@ -53,11 +51,15 @@
      Você se interessa pela parte técnica de um computador 
   <input type="checkbox" name="P" value="D" class="p">
   <span class="checkmark"></span>
-  
   </label>
- <input type="button" class="result" id="somar" value="VER">
- <label for="result">Resultado</label>
- <input type="text" id="result"  class="form-control result" readonly>
+
+   <!--botao que puxa o script-->
+   <input type="button" class="btn-success" id="butao" value="submit">
+   <!--input que mostra se o radio ta on ou off e quantas vezes foi selecionado-->
+   <input type="text" id="work" class="form-control" readonly>
+   <!--Botao que reridiciona pra outra pag-->
+   <input type="button" onclick="location.href = 'index2.html';" class="btn-danger"  value="Prosseguir">
+
 </body>
 
 <style>
