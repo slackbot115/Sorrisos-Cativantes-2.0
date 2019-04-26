@@ -156,7 +156,16 @@ h2{
   font-weight: bold;
 }
 
-#ask{
+#insc{
+  display: block;
+}
+
+#insc2{
+  display: none;
+}
+
+#frame{
+  display: none;
 }
 
 .myButton {

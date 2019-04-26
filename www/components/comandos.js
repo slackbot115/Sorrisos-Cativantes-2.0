@@ -18,9 +18,23 @@ $(document).on('click','#licursos', function(){
   $('#escola').css({display:"none"});
 });
 
+
+
 $(document).on('click','#insc', function(){
-  var ref = cordova.InAppBrowser.open('https://www.vestibulinhoetec.com.br/candidato/dados-acesso.asp', '_blank', 'location=yes');
+  /*var ref = cordova.InAppBrowser.open('https://www.vestibulinhoetec.com.br/candidato/dados-acesso.asp', '_blank', 'location=yes');*/
+  $('#frame').css({display:"block"});
+  $('#insc2').css({display:"block"});
+  $('#insc').css({display:"none"});
 });
+
+$(document).on('click','#insc2', function(){
+  /*var ref = cordova.InAppBrowser.open('https://www.vestibulinhoetec.com.br/candidato/dados-acesso.asp', '_blank', 'location=yes');*/
+  $('#frame').css({display:"none"});
+  $('#insc2').css({display:"none"});
+  $('#insc').css({display:"block"});
+});
+
+
 
 $(document).on('click','#teste', function(){
   $('#quiz').css({display:"block"});
