@@ -126,6 +126,11 @@ a2{
   /*Definição para um quadro de celular*/
 }
 
+#teste{
+  margin-left: -10%;
+}
+
+
 .quadroTexto{
   text-align: center;
   margin-top: 10px;

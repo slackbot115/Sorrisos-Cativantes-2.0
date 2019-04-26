@@ -270,7 +270,7 @@
 
         <center>
           <b>Se preferir...</b>
-          <button class="form-control btn btn-danger" style="width: 80%; margin-top: 5%; margin-bottom: 10%;" id="teste">Teste Vocacional</button>
+          <a href="index1.html"><button class="form-control btn btn-danger" style="width: 80%; margin-top: 5%; margin-bottom: 10%;" id="teste">Teste Vocacional</button></a>
         </center>
 
         <h2>Desenvolvimento de Sistemas</h2>
@@ -628,45 +628,45 @@
 
 
   <div class="container" id="quiz">
-    <div class="row">
-      <div class="col-xs-12"> 
-        <div class="container">
+    <label class="container quadroPergunta"> <h3>Pergunta 1:</h3>
+    <p>Você gosta de utilizar a lógica na resolução de problemas</p>
+  <input type="checkbox" name="P" value="D" class="p" id="askDS">
+  <span class="checkmark"></span>
+  </label>
 
-          <h2>Teste Vocacional</h2>
+  <label class="container quadroPergunta"> <h3>Pergunta 2: </h3>
+    <p>Você gosta de obras arquitetônicas </p>
+  <input type="checkbox" name="P" value="D" class="p" id="askED">
+  <span class="checkmark"></span>
+  </label>
 
-          <div class="col-xs-12">
-            <input type="checkbox" id="ask">
-            <label class="container quadroPergunta">Pergunta 1: Você gosta de utilizar a lógica na resolução de problemas </label>
-          </div>
+  <label class="container quadroPergunta"> <h3>Pergunta 3:</h3>
+     <p>Você gosta de cuidar de pessoas </p>
+  <input type="checkbox" name="P" value="D" class="p" id="askENF">
+  <span class="checkmark"></span>
+  </label>
 
-          <div class="col-xs-12">
-            <input type="checkbox" id="ask">
-            <label class="container quadroPergunta">Pergunta 2: Você gosta de obras arquitetônicas </label>
-          </div>
+  <label class="container quadroPergunta"> <h3>Pergunta 4: </h3>
+    <p>Você gosta de viagens </p>
+  <input type="checkbox" name="P" value="D" class="p" id="askTR">
+  <span class="checkmark"></span>
+  </label>
 
-          <div class="col-xs-12">
-            <input type="checkbox" id="ask">
-            <label class="container quadroPergunta">Pergunta 3: Você gosta de cuidar de pessoas </label>
-          </div>
+  <label class="container quadroPergunta"> <h3> Pergunta 5:</h3>
+     <p>Você se interessa pela parte técnica de um computador </p>
+  <input type="checkbox" name="P" value="D" class="p" id="askMN">
+  <span class="checkmark"></span>
+  </label>
 
-          <div class="col-xs-12">
-            <input type="checkbox" id="ask">
-            <label class="container quadroPergunta">Pergunta 4: Você gosta de viagens? </label>
-          </div>
+   <!--input que mostra se o radio ta on ou off e quantas vezes foi selecionado-->
 
-          <div class="col-xs-12">
-            <input type="checkbox" id="ask">
-            <label class="container quadroPergunta">Pergunta 5:Você se interessa pela parte técnica de um computador </label>
-          </div>
-          
+   <!-- <input type="text" id="work" class="form-control" readonly> -->
 
-          <img src="barra/p0.png" style="width: 100%;">
-
-          <button class="form-control myButton btn btn-danger btn-block" id="butao1" style="margin-top: 10%;">Prosseguir</button>
-
-        </div>
-      </div>
-    </div>
+   <!--Botao que reridiciona pra outra pag-->
+   <center>
+   <button class="myButton" id="butao" onclick="location.href = 'index2.html';" value="submit">Prosseguir</button>
+   
+   </center>
   </div>
 
   <div class="container" id="quiz2">
