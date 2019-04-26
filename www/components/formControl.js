@@ -1,21 +1,93 @@
+
 $(document).on("click","#butao", function(){
-  if(localStorage.getItem("ask")==null)localStorage.setItem("ask",0);{
-    var ask= parseInt(localStorage.getItem("ask"));
-  if($("#ask").prop("checked")==true){
-    ask++;
-    $("#work").val("on "+ask);
+  var DS = 0;
+  var ED = 0;
+  var ENF = 0;
+  var TR = 0;
+  var ADM = 0;
+  var MN = 0;
+  if(localStorage.getItem("x")==null)var x=localStorage.setItem("x",0);else var x=localStorage.getItem("x");
+  
+
+  if(localStorage.getItem("askDS")==null){
+    localStorage.setItem("askDS",0);
+    } if(localStorage.getItem("askED")==null){
+    localStorage.setItem("askED",0);
+    } if(localStorage.getItem("askENF")==null){
+    localStorage.setItem("askENF",0);
+    } if(localStorage.getItem("askTR")==null){
+    localStorage.setItem("askTR",0);
+    } if(localStorage.getItem("askADM")==null){
+    localStorage.setItem("askADM",0);
+    }if(localStorage.getItem("askMN")==null){
+    localStorage.setItem("askMN",0);
     }
-  else{
-    $("#work").val("off "+ask);
+    var DS= parseInt(localStorage.getItem("askDS"));
+    var ED= parseInt(localStorage.getItem("askED"));
+    var ENF= parseInt(localStorage.getItem("askENF"));
+    var TR= parseInt(localStorage.getItem("askTR"));
+    var ADM= parseInt(localStorage.getItem("askADM"));
+    var MN= parseInt(localStorage.getItem("askMN"));
+
+
+
+  if($("#askDS").prop("checked")==true){
+     DS++;
+    
+    }
+    if($("#askED").prop("checked")==true){
+     ED++;
+    
+    }
+    if($("#askENF").prop("checked")==true){
+     ENF++;
+    
+    }
+    if($("#askTR").prop("checked")==true){
+     TR++;
+    
+    }
+    if($("#askADM").prop("checked")==true){
+     ADM++;
+    
+    }
+     if($("#askMN").prop("checked")==true){
+     MN++;
+    
+    }
+  localStorage.setItem("askDS",DS); 
+  localStorage.setItem("askED",ED); 
+  localStorage.setItem("askENF",ENF); 
+  localStorage.setItem("askTR",TR); 
+  localStorage.setItem("askADM",ADM); 
+  localStorage.setItem("askMN",MN); 
+
+  $("#result").val("DS:"+DS+"ED:"+ED+"ENF:"+ENF+"TR"+TR+"ADM"+ADM+"MN:"+MN);
+  x++;
+  
+  if(x==6)localStorage.clear();
+
+  if(DS > ED && ENF && TR && ADM && MN){
+    $("#result").val("Você é perfeito para Desenvolvimento de Sistemas");
   }
-  localStorage.setItem("ask",ask); 
+
+  else if (ED > DS && ENF && TR && ADM && MN){
+    $("#result").val("Você é perfeito para Edificações");  
+  }
+  else if (ENF > DS && ED && TR && ADM && MN){
+    $("#result").val("Você é perfeito para Enfermagem");
+  }
+  else if ( TR > DS && ED && ENF && ADM && MN){
+    $("#result").val("Você é perfeito para Turismo");
+  }
+  else if (ADM > DS && ED && ENF && TR && MN){
+    $("#result").val("Você é perfeito para Administração"); 
+  }
+  else if (MN > DS && ED && ENF && TR && ADM){
+    $("#result").val("Você é perfeito para Manutenção") 
   }
 });
+ 
 
-var DS = 0;
-var ED = 0;
-var ENF = 0;
-var TR = 0;
-var ADM = 0;
-var MA = 0;
+
 
