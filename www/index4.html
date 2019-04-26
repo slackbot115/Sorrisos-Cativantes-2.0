@@ -6,11 +6,13 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/jquery-3.4.0.min.js"></script>
+  <script src="components/formControl.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.css.min">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 <body>
@@ -53,17 +55,18 @@
   <span class="checkmark"></span>
   </label>
 
- 
+  <center>
+  <button class="myButton" id="butao" onclick="location.href = '#';" value="submit">Prosseguir</button>
+  </center>
 
 </body>
 
 <style>
-/* The container */
 .container {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin: 5%;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -124,6 +127,47 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.myButton {
+	-moz-box-shadow: 3px 4px 4px -1px #8a2a21;
+	-webkit-box-shadow: 3px 4px 4px -1px #8a2a21;
+	box-shadow: 3px 4px 4px -1px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c20000), color-stop(1, #ff3c2e));
+	background:-moz-linear-gradient(top, #c20000 5%, #ff3c2e 100%);
+	background:-webkit-linear-gradient(top, #c20000 5%, #ff3c2e 100%);
+	background:-o-linear-gradient(top, #c20000 5%, #ff3c2e 100%);
+	background:-ms-linear-gradient(top, #c20000 5%, #ff3c2e 100%);
+	background:linear-gradient(to bottom, #c20000 5%, #ff3c2e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c20000', endColorstr='#ff3c2e',GradientType=0);
+	background-color:#c20000;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #bf261b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:19px;
+	font-weight:bold;
+	padding:8px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff3c2e), color-stop(1, #c20000));
+	background:-moz-linear-gradient(top, #ff3c2e 5%, #c20000 100%);
+	background:-webkit-linear-gradient(top, #ff3c2e 5%, #c20000 100%);
+	background:-o-linear-gradient(top, #ff3c2e 5%, #c20000 100%);
+	background:-ms-linear-gradient(top, #ff3c2e 5%, #c20000 100%);
+	background:linear-gradient(to bottom, #ff3c2e 5%, #c20000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c2e', endColorstr='#c20000',GradientType=0);
+	background-color:#ff3c2e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 </style>
 
