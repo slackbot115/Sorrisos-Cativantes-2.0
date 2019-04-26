@@ -1,0 +1,42 @@
+.botao{
+  background-color: #900017;
+  color: #000;
+  width
+}
+
+.imagem{
+  width: 640px;
+  height: 100px;
+  border-style: solid;
+  border-width: 3px;
+  margin-top: 10px
+
+  /*Essa é a definição pra um "banner" de celular, deixei assim só pra especificar */
+}
+.quadroCelular{
+  width: 768px;
+  /*Definição para um quadro de celular*/
+}
+
+.quadroTexto{
+  margin-top: 10px;
+  width: 550px;
+  height: 100px;
+  margin-left: 30px;
+
+  /*Definição para um quadro de texto no celular*/
+}
+
+.quadroBotao{
+  text-align: center
+}
+
+.quadroBotao a button:hover{
+  background-color: #900017;
+  color: #000;
+}
+
+.quadroBotao a button:active{
+  background-color: #900017;
+  color: #000;
+}
