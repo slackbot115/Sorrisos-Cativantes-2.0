@@ -58,6 +58,10 @@ a2{
   display: none;
 }
 
+#cursos2{
+  display: none;
+}
+
 #quiz{
   display: none;
 }
@@ -124,6 +128,21 @@ a2{
 
 .quadroTexto{
   text-align: center;
+  margin-top: 10px;
+  margin-left: 0%;
+  width: 100%;
+  height: 100%;
+  /*Definição para um quadro de texto no celular*/
+}
+
+#txt{
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.quadroTexto2{
+  text-align: left;
   margin-top: 10px;
   margin-left: 0%;
   width: 100%;

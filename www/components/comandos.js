@@ -3,19 +3,37 @@
 $(document).on('click','#lihome', function(){
   $('#home').css({display:"block"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#escola').css({display:"none"});
+  $('#quiz').css({display:"none"});
+  $('#quiz2').css({display:"none"});
+  $('#quiz3').css({display:"none"});
+  $('#quiz4').css({display:"none"});
+  $('#quiz5').css({display:"none"});
 });
 
 $(document).on('click','#liescola', function(){
   $('#home').css({display:"none"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#escola').css({display:"block"});
+  $('#quiz').css({display:"none"});
+  $('#quiz2').css({display:"none"});
+  $('#quiz3').css({display:"none"});
+  $('#quiz4').css({display:"none"});
+  $('#quiz5').css({display:"none"});
 });
 
 $(document).on('click','#licursos', function(){
   $('#home').css({display:"none"});
-  $('#cursos').css({display:"block"});
+  $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"block"});
   $('#escola').css({display:"none"});
+  $('#quiz').css({display:"none"});
+  $('#quiz2').css({display:"none"});
+  $('#quiz3').css({display:"none"});
+  $('#quiz4').css({display:"none"});
+  $('#quiz5').css({display:"none"});
 });
 
 
@@ -43,6 +61,7 @@ $(document).on('click','#teste', function(){
   $('#quiz4').css({display:"none"});
   $('#quiz5').css({display:"none"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#home').css({display:"none"});
   $('#escola').css({display:"none"});
 });
@@ -54,6 +73,7 @@ $(document).on('click','#butao1', function(){
   $('#quiz4').css({display:"none"});
   $('#quiz5').css({display:"none"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#home').css({display:"none"});
   $('#escola').css({display:"none"});
 });
@@ -65,6 +85,7 @@ $(document).on('click','#butao2', function(){
   $('#quiz4').css({display:"none"});
   $('#quiz5').css({display:"none"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#home').css({display:"none"});
   $('#escola').css({display:"none"});
 });
@@ -76,6 +97,7 @@ $(document).on('click','#butao3', function(){
   $('#quiz4').css({display:"block"});
   $('#quiz5').css({display:"none"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#home').css({display:"none"});
   $('#escola').css({display:"none"});
 });
@@ -87,6 +109,7 @@ $(document).on('click','#butao4', function(){
   $('#quiz4').css({display:"none"});
   $('#quiz5').css({display:"block"});
   $('#cursos').css({display:"none"});
+  $('#cursos2').css({display:"none"});
   $('#home').css({display:"none"});
   $('#escola').css({display:"none"});
 });
@@ -98,6 +121,7 @@ $(document).on('click','#butao5', function(){
   $('#quiz4').css({display:"none"});
   $('#quiz5').css({display:"none"});
   $('#cursos').css({display:"block"});
+  $('#cursos2').css({display:"none"});
   $('#home').css({display:"none"});
   $('#escola').css({display:"none"});
 });
