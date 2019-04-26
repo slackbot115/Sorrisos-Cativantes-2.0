@@ -13,36 +13,9 @@ $(document).on('click','#liescola', function(){
 });
 
 $(document).on('click','#licursos', function(){
-  var cont = 1;
   $('#home').css({display:"none"});
   $('#cursos').css({display:"block"});
   $('#escola').css({display:"none"});
-
-  window.onload = function(e){ 
-
-  }
-  function retorno2(buttonIndex){
-      if(buttonIndex == 1){
-        navigator.notification.alert("Digitou OK");
-        $(document).on('click','#teste', function(){
-          $('#quiz').css({display:"block"});
-          $('#quiz2').css({display:"none"});
-          $('#quiz3').css({display:"none"});
-          $('#quiz4').css({display:"none"});
-          $('#quiz5').css({display:"none"});
-          $('#cursos').css({display:"none"});
-          $('#home').css({display:"none"});
-          $('#escola').css({display:"none"});
-        });
-      }
-
-      else{
-      }
-    }
-
-    $(document).on('click','#n3',function(){
-      navigator.notification.confirm("Deseja fazer o teste vocacional?", retorno2, "Janela", ["Sim","Não"]);
-    });
 });
 
 $(document).on('click','#insc', function(){
